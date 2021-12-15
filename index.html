@@ -5,7 +5,7 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<title>Tic Tac Toe Game - Player vs Player</title>
+	<title>Tic Tac Toe Game - Player vs Player</title> <!-- Changed the title. -->
 	<link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,18 +16,18 @@
 	<main>
 		<div id="container">
 			<div id="game-board">
-				<div id="square-0" class="game-square"></div>
-				<div id="square-1" class="game-square"></div>
-				<div id="square-2" class="game-square"></div>
-				<div id="square-3" class="game-square"></div>
-				<div id="square-4" class="game-square"></div>
-				<div id="square-5" class="game-square"></div>
-				<div id="square-6" class="game-square"></div>
-				<div id="square-7" class="game-square"></div>
-				<div id="square-8" class="game-square"></div>
-			</div>
+				<div data-cell-index="0" class="cell"></div>
+				<div data-cell-index="1" class="cell"></div>
+				<div data-cell-index="2" class="cell"></div>
+				<div data-cell-index="3" class="cell"></div>
+				<div data-cell-index="4" class="cell"></div>
+				<div data-cell-index="5" class="cell"></div>
+				<div data-cell-index="6" class="cell"></div>
+				<div data-cell-index="7" class="cell"></div>
+				<div data-cell-index="8" class="cell"></div>
+			</div> <!-- Changed the id's to data-cell-index while changing the classes to cell. -->
 		</div>
-		<h2 class="game--status"></h2>
+		<h2 class="game--status"></h2> <!-- Made this game status h2 instead of the turn checker. -->
 		<div id="play-again">
 			<button id="button-play-again">Play again!</button>
 		</div>
