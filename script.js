@@ -11,6 +11,7 @@ const drawMessage = () => `Game ended in a draw!`;
 const currentPlayerTurn = () => `It's ${currentPlayer}'s turn`;
 // These messages will go into the game status h2.
 
-
+statusDisplay.innerHTML = currentPlayerTurn();
+// This will display the current turn.
 
 
