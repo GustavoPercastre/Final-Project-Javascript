@@ -26,5 +26,12 @@ const winningConditions = [
 ];
 // These are the win conditions in tic tac toe.
 
+function handleCellPlayed(clickedCell, clickedCellIndex) {
+    gameState[clickedCellIndex] = currentPlayer;
+    clickedCell.innerHTML = currentPlayer;
+}
+// This would allow the player to click on the cells and match with the current player.
+
+
 
 
