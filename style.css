@@ -27,34 +27,16 @@ h2 {
 	width: 100%;
 }
 
-#game-board {
-	display: grid;
-	grid-template-columns: repeat(3, 150px);
-	margin: 0 auto;
-	width: 450px
-}
-
 #play-again {
 	margin: 0 auto;
 }
 
-#square-0, #square-1, #square-3, #square-4 {
-	border-width: 0 2px 2px 0;
-}
-
-#square-2, #square-5 {
-	border-width: 0 0 2px 0;
-}
-
-#square-6, #square-7 {
-	border-width: 0 2px 0 0;
-}
-
-#square-8 {
-	border-width: 0;
-}
-
-#turn {}
+#game-board {
+	display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 306px;
+    margin: 50px auto;
+} /* Changed the game board to be a grid instead of on CSS. */
 
 .game-square {
 	border-color: lightgrey;
