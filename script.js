@@ -96,5 +96,7 @@ function handleRestartGame() {
 document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click', handleCellClick));
 // This is so when you actually click on the blocks on the webpage the X and O will appear.
 
+document.querySelector('#button-play-again').addEventListener('click', handleRestartGame);
+// This will make so when you click the the Play Again Button it will reset the board.
 
 
