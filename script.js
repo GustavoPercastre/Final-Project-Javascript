@@ -93,6 +93,8 @@ function handleRestartGame() {
 }
 // This would allow for the restart button to clear all the cells once clicked.
 
+document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click', handleCellClick));
+// This is so when you actually click on the blocks on the webpage the X and O will appear.
 
 
 
