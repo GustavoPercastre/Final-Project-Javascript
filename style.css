@@ -38,13 +38,13 @@ h2 {
     margin: 50px auto;
 } /* Changed the game board to be a grid instead of on CSS. */
 
-.game-square {
-	border-color: lightgrey;
-	border-style: solid;
-	display: inline;
-	font-size: 6em;
-	line-height: 120px;
-	padding: 20px 40px;
-	height: 150px;
-	width: 150px;
-}
+.cell {
+    font-family: "Permanent Marker", cursive;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 0 1px #333333;
+    border: 1px solid #333333;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 60px;
+} /* Changed the games square class to the cell class and styled the grid. */
