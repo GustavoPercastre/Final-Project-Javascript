@@ -32,6 +32,11 @@ function handleCellPlayed(clickedCell, clickedCellIndex) {
 }
 // This would allow the player to click on the cells and match with the current player.
 
+function handlePlayerChange() {
+    currentPlayer = currentPlayer === "X" ? "O" : "X";
+    statusDisplay.innerHTML = currentPlayerTurn();
+}
+// This will let the game change between X and O.
 
 
 
