@@ -82,7 +82,16 @@ function handleCellClick(clickedCellEvent) {
     handleCellPlayed(clickedCell, clickedCellIndex);
     handleResultValidation();
 }
-// This will mae sure that a person cant click on a cell that another person has clicked on already.
+// This will make sure that a person cant click on a cell that another person has clicked on already.
+
+function handleRestartGame() {
+    gameActive = true;
+    currentPlayer = "X";
+    gameState = ["", "", "", "", "", "", "", "", ""];
+    statusDisplay.innerHTML = currentPlayerTurn();
+    document.querySelectorAll('.cell').forEach(cell => cell.innerHTML = "");
+}
+// This would allow for the restart button to clear all the cells once clicked.
 
 
 
