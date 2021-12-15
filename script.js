@@ -71,6 +71,19 @@ function handleResultValidation() {
 }
 // This would allow for people to actually play the game and either return if a player one, lost, or draw.
 
+function handleCellClick(clickedCellEvent) {
+    const clickedCell = clickedCellEvent.target;
+    const clickedCellIndex = parseInt(clickedCell.getAttribute('data-cell-index'));
+
+    if (gameState[clickedCellIndex] !== "" || !gameActive) {
+        return;
+    }
+
+    handleCellPlayed(clickedCell, clickedCellIndex);
+    handleResultValidation();
+}
+// This will mae sure that a person cant click on a cell that another person has clicked on already.
+
 
 
 
