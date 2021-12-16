@@ -70,6 +70,8 @@ function handleResultValidation() {
             playerO++;
         } // These will allow the scores to go up by one.
         statusDisplay.innerHTML = winningMessage();
+        statusScoreO.innerHTML = playerO;
+        statusScoreX.innerHTML = playerX; // This will connect to the scoreboard and let the numbers go up when someone wins.
         gameActive = false;
         return;
     }

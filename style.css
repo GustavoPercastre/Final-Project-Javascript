@@ -47,15 +47,4 @@ h2 {
     cursor: pointer;
     line-height: 100px;
     font-size: 60px;
-} /* Changed the games square class to the cell class and styled the grid. */
-/*if (currentPlayer == 'X') {
-	playerX++;
 }
-
-else {
-	playerO++;
-}
-statusScoreO.innerHTML = playerO;
-        statusScoreX.innerHTML = playerX;
-		let playerX = 0;
-let playerO = 0; */ 
