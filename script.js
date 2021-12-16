@@ -115,4 +115,3 @@ document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click'
 document.querySelector('#button-play-again').addEventListener('click', handleRestartGame);
 // This will make so when you click the the Play Again Button it will reset the board.
 
-
