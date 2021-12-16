@@ -63,6 +63,12 @@ function handleResultValidation() {
     }
 
     if (roundWon) {
+        if (currentPlayer == 'X') {
+            playerX++;
+        }
+        else {
+            playerO++;
+        } // These will allow the scores to go up by one.
         statusDisplay.innerHTML = winningMessage();
         gameActive = false;
         return;
