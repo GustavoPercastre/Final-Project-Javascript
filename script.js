@@ -10,7 +10,9 @@ let currentPlayer = "X";
 let gameState = ["", "", "", "", "", "", "", "", ""];
 // Game active will store the current player to keep track of who's turn it is. Current player will will store the current game state. And game state will store the messages for the game. 
 
-
+let playerX = 0;
+let playerO = 0;
+// These will allow for the scores to start at zero.
 
 const winningMessage = () => `Player ${currentPlayer} has won!`;
 const drawMessage = () => `Game ended in a draw!`;
